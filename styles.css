@@ -1,0 +1,59 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.input {
+  border: 1px solid #eee;
+  padding: 0.5rem;
+  width: 100%;
+  outline: none;
+  color: #888;
+  font-size: 1.2rem;
+}
+
+.btns--container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+}
+
+.btn, .btn--green, .btn--clear, .btn--delete {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eee;
+  border-radius: 50%;
+  padding: 1rem;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+}
+
+.btn--green {
+  background-color: green;
+  color: #fff;
+}
+
+.btn--clear {
+  color: red;
+}
+
+.btn--delete-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn--delete{
+  background-color: transparent;
+}
